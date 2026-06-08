@@ -1,0 +1,18 @@
+命令行形式：
+1. cd "d:\VS Code Project\1"
+2. git status --short --branch
+3. git remote -v
+4. git fetch origin
+5. git rev-list --left-right --count origin/main...main 2>$null || echo "no remote branch"
+6. git pull --rebase origin main
+7. git push origin main
+
+图形化方式：
+1. 打开文件资源管理器并定位到“d:\VS Code Project\1”文件夹。
+2. 右键点击空白处，选择“Git Bash Here”或打开终端后确认当前路径在该文件夹。
+3. 查看版本控制状态：在终端中运行“git status --short --branch”，查看是否有未提交内容以及当前分支信息。
+4. 查看远程仓库地址：运行“git remote -v”，确认远程仓库是否是目标仓库。
+5. 拉取远程最新更新：运行“git fetch origin”，然后比较本地与远程分支差异。
+6. 合并远程更新：运行“git pull --rebase origin main”，将远程 main 分支的提交整合到本地分支上。
+7. 上传本地更改：运行“git push origin main”，将本地 main 分支推送到远程仓库。
+8. 如果你使用图形化 Git 客户端（如 Sourcetree、GitHub Desktop、GitKraken 等）：打开仓库，检查“工作区更改”，拉取远程更改，然后点击“推送”按钮上传本地提交。
