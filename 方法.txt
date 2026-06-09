@@ -1,0 +1,14 @@
+以下是本次用于将当前文件夹上传到 GitHub 仓库的命令：
+
+1. cd "d:\VS Code Project\4"
+2. pwd
+3. ls
+4. git status --short --branch
+5. git remote -v
+6. git log --oneline -1
+7. git branch -vv
+8. git remote set-url origin https://github.com/DUST1245/Test.git
+9. git branch -M main
+10. git add .
+11. git commit -m "初次上传"
+12. git push -u origin main
